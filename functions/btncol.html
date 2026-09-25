@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="red" onclick="red()">Red</button>
+    <button id="blue" onclick="blue()">Blue</button>
+    <button id="green" onclick="green()">Green</button>
+    <p id="content"></p>
+    <script>
+        function red(){
+            document.getElementById('red').style.background="red";
+            clicked('red');
+        }
+        function blue(){
+            document.getElementById('blue').style.background="blue";
+            clicked('blue');
+        }
+        function green(){
+            document.getElementById('green').style.background="green";
+            clicked('green');
+        }
+        function clicked(color){
+            document.getElementById('content').innerHTML=`<p>Youve clicked ${color}</p>`;
+        }
+    </script>
+</body>
+</html>

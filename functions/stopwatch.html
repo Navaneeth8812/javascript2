@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showSmt()">Start</button>
+    <button onclick="showNthn()">Stop</button>
+    <div id="display">
+
+    </div>
+    <script>
+        let timer;
+        function showSmt(){
+            timer = setTimeout(function(){
+            document.getElementById("display").innerHTML="hi"
+        },2000)
+        }
+        function showNthn(){
+            clearTimeout(timer);
+        }
+        
+    </script>
+</body>
+</html>

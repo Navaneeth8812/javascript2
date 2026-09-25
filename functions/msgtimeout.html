@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="disapMsg()">DisapMsg</button>
+    <div id="demo">
+        <p id="moto">Visca Barca'</p>
+        <p id="new"></p>
+    </div>
+    <script>
+        let timer;
+        function disapMsg(){
+            timer=setInterval(function(){
+            document.getElementById("demo").style.display="none";
+            },2000)
+            display();
+        }
+        function display(){
+            document.getElementById("new").innerHTML="This message will disappear in 2s.."
+        }
+    </script>
+</body>
+</html>

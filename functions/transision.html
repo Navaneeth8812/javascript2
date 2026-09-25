@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barca</title>
+</head>
+<body>
+    <button onclick="display()">
+        <p id="display">Click me</p>
+    </button> 
+    <button id="colors"></button>
+    <script>
+     
+        function display(){
+            let count = 0;
+            const interval = setInterval(function(){
+            count++;
+                if(count ===1){
+                    show();
+                }
+                if(count ===2){
+                    show1();
+                }
+                if(count ===3){
+                    showing();
+                    clearInterval(interval);
+                }
+        },500);
+        }
+    
+        function show(){
+            document.getElementById('colors').innerHTML="we";
+            color('red');
+        }
+        function show1(){
+            document.getElementById('colors').innerHTML="are";
+            color('blue');
+        }
+        function showing(){
+            document.getElementById('colors').innerHTML="barca";
+            color('yellow');
+        }
+        function color(myc){
+            document.getElementById('colors').style.background=myc;
+        }
+    </script>
+</body>
+</html>
