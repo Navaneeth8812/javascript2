@@ -13,9 +13,13 @@
     <div id="4" class="display"></div>
     <div id="5" class="display"></div> 
     <button onclick="displayCol()">start simulate</button>
+    <div class="content">
+        <p>press space to stop</p>
+    </div>
+
     <script>
     function displayCol(){
-        let interval = setInterval(function(){
+        let interval = setTimeout(function(){
             num1(1);
         },1000)
         let interval2 = setInterval(function(){

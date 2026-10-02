@@ -1,0 +1,26 @@
+.display{
+    border: 1px solid rgb(98, 98, 98);
+    width: 3%;
+    padding: 1rem;
+    border-radius: 90%;
+    border-bottom: none;
+}
+body{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.dis-board{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.first, .second{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}

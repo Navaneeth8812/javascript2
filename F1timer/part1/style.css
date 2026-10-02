@@ -8,4 +8,9 @@
 body{
     display: flex;
     gap: 0.5rem;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: column;
 }
